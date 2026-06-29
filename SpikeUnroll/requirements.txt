@@ -1,0 +1,10 @@
+torch==2.6.0+cu124
+numpy==2.2.6
+scikit-image==0.25.2
+h5py==3.14.0
+tqdm==4.67.1
+tensorboard==2.20.0
+opencv-python>=4.1.2
+lpips
+ml_collections
+einops

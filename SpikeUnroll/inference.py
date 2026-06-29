@@ -102,6 +102,8 @@ def eval_real(model, device):
         
 
 
+
+
 if __name__ == '__main__': 
     model = SpikeImageFusion() 
     checkpoint = torch.load('./model_result/SURF-Net.pth', map_location=device) 
