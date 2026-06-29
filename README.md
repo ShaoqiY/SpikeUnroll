@@ -1,64 +1,21 @@
 # SpikeUnroll
 
-A brief description of your project.  
-For example: Spike-based HDR video reconstruction via virtual spike frame unrolling.
+Code and dataset for Chromatic HFR and HDR Video via Virtual Spike Frame Unrolling
 
----
+# Datasets
 
-# 🔥 Visual Results
-
-## 📌 Demo 1: Scenario A (e.g., low-light / fast motion / HDR scene)
-
-This demo demonstrates the performance of our method under Scenario A.  
-The proposed model effectively reconstructs high-quality frames with preserved details and reduced artifacts.
-
-<p align="center">
-  <img src="assets/demo1.gif" width="80%">
-</p>
-
----
-
-## 📌 Demo 2: Scenario B (e.g., complex lighting / dynamic range changes)
-
-This demo shows the reconstruction results under more challenging conditions.  
-Compared with baseline methods, our approach achieves more stable and visually consistent outputs.
-
-<p align="center">
-  <img src="assets/demo2.gif" width="80%">
-</p>
-
----
-
-# 📊 Datasets
-
-## 📌 Public Dataset
+## Public Dataset
 
 We use the dataset provided in the following paper:
 
-👉 [Paper Name / Dataset Link](https://xxx.com)
+[EvUnroll: Neuromorphic Events based Rolling Shutter Image Correction](https://github.com/zxyemo/EvUnroll?tab=readme-ov-file)
 
-(Replace with the official paper or dataset homepage link)
+## Our Dataset
 
----
+We also provide our collected dataset for evaluation.
+Baidu Netdisk：https://pan.baidu.com/xxxx  
 
-## 📌 Our Dataset
-
-We also provide our collected dataset for training and evaluation.
-
-Download link (Baidu Netdisk):  
-👉 https://pan.baidu.com/xxxx  
-Extraction code: xxxx
-
----
-
-# 🚀 How to Run Demo
-
-The demo consists of two steps:
-
----
-
-## Step 1: Environment Setup
-
+# How to Run Demo
 Create and activate the environment:
 
 ```bash
@@ -66,3 +23,9 @@ conda create -n spike_env python=3.9
 conda activate spike_env
 
 pip install -r requirements.txt
+```
+Run the demo code:
+```bash
+python inference_flow.py # Generate spike-flow-unrolling results.
+pyhton inference.py      # Generate the refined results using the SURF-Net network.
+```
